@@ -1,0 +1,21 @@
+class Complex_Number:
+    result = ""
+    def __init__(self, real, imag):
+        self.real = real
+        self.imag = imag
+    
+    def product(self, other):
+       
+        self.result =f" {((self.real * other.real)- (self.imag * other.imag))} + {((self.real * other.imag) + (self.imag * other.real))}"
+        #print(self.result)
+    
+    def print_num(self):
+        print(f"product of complexnumber is :,{self.result}i")
+
+
+
+z1 = Complex_Number(5, 3)  
+z2 = Complex_Number(3, 4)  
+z1.product(z2)
+z1.print_num()
+#print("Product of imaginary value:",z1)
